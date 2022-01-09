@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Zilla Slab', serif;
-  background: black;
+  background-color: rgb(237, 224, 206);
 }
 
 /* *********************** NAVBAR ********************* */
@@ -50,7 +50,7 @@ body {
 .a-nav:hover {
   transition: ease all 0.5s;
   font-size: 1.6em;
-  text-shadow: 2px 2px 0px orange,3px 3px 0px goldenrod;
+  text-shadow: 2px 2px 0px goldenrod;
 }
 
 .nav-btn {
@@ -100,6 +100,7 @@ body {
 }
 
 .title-master {
+  animation: titre ease 3s;
   position: absolute;
   height: 30%;
   left: 15%;
@@ -109,10 +110,10 @@ body {
 
 /* ******************** MAIN ****************** */
 
-.bg-zaun {
-  background: url(https://sm.ign.com/ign_es/screenshot/default/zaun_hnvy.jpg) no-repeat 50% 50%;
+.bg-family {
+  background: url(./media/bg-family.webp) no-repeat 50% 50%;
   background-size: cover;
-  padding: 120px;
+  padding: 120px 100px;
   position: relative;
   bottom: 0px;
 }
@@ -122,6 +123,7 @@ body {
   color: white;
   text-align: center;
   margin: 0 10%;
+
 }
 
 .titre-1 {
@@ -150,7 +152,7 @@ body {
   font-weight: normal;
   background: rgb(226, 208, 208);
   margin-top: 50px;
-  margin-left: 580px;
+  margin-left: 598px;
 }
 
 .button-2:hover {
@@ -158,4 +160,206 @@ body {
   cursor: pointer;
   background: goldenrod;
   color: white;
+  box-shadow: 2.5px 2.5px 0px white;
 }
+
+.Piltover {
+  background: url(./media/piltover_city.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 799px;
+  width: auto;
+  margin-top: -46px;
+}
+
+.box-strong-2 {
+  font-family: 'Zilla Slab', serif;
+  color: white;
+  text-align: center;
+  margin: 0 15%;
+  position: relative;
+  top: 18%;
+}
+
+.trait-2 {
+  height: 3px;
+  width: 35%;
+  background: rgb(255, 255, 255);
+  position: relative;
+  left: 32.5%;
+  margin: 30px 0;
+}
+
+.titre-2 {
+  font-size: 7em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.texte-2 {
+  font-size: 2em;
+}
+
+.Zaun {
+  background: url(./media/zaun.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 799px;
+  width: auto;
+}
+
+.box-strong-3 {
+  font-family: 'Zilla Slab', serif;
+  color: white;
+  text-align: center;
+  margin: 0 15%;
+  position: relative;
+  top: 20%;
+}
+
+.trait-3 {
+  height: 3px;
+  width: 35%;
+  background: rgb(255, 255, 255);
+  position: relative;
+  left: 32.5%;
+  margin: 30px 0;
+}
+
+.titre-3 {
+  font-size: 6em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.texte-3 {
+  font-size: 2em;
+}
+
+.bg-family:hover, .Piltover:hover, .Zaun:hover, .bg-personnage:hover {
+  transition: ease 0.9s all;
+  -webkit-filter: grayscale(0%); 
+}
+  
+.bg-family, .Piltover, .Zaun, .bg-personnage {
+  transition: ease 0.9s all;
+  -webkit-filter: grayscale(100%); 
+}
+
+/* *********************** PERSONNAGES ******************** */
+
+.bg-personnage {
+  background: url(./media/bg-personnage.webp) no-repeat 50% 50%;
+  background-size: cover;
+  height: 799px;
+  width: auto;
+  position: relative;
+  bottom: 17px;
+  text-align: center;
+}
+
+.titre-4 {
+  color: white;
+  font-size: 5em;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 13%;
+  padding-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 5%;
+  flex-wrap: wrap;
+}
+
+.personnage {
+  position: relative;
+  bottom: -30px;
+}
+
+.box {
+  transition: ease 0.5s all;
+  background: url(./media/media-cards-bg-purple-d-f5b6d7ea814243730e3d7e010d5f4e89.jpg) no-repeat 50% 50% ;
+  background-size: 820px 500px;
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+  height: 400px;
+  width: 350px;
+  border: double 5px rgb(5, 12, 26);
+}
+
+.box:hover {
+  border: 5px double rgb(56, 1, 56);
+  box-shadow: 7px 7px 0 rgb(5, 12, 26);
+  transform: translatey(7px);
+  transition: ease 0.5s all;
+}
+
+h4 {
+  font-family: 3em;
+  text-transform: uppercase;
+  color: rgb(237, 224, 206);
+}
+
+.img-radius {
+  height: 250px;
+  width: auto;
+  border: double white 5px;
+}
+
+p {
+  color: white;
+}
+
+.img-radius {
+  transition: ease 0.9s all;
+  -webkit-filter: grayscale(100%);
+}
+
+.img-radius:hover {
+  transition: ease 0.8s all;
+  -webkit-filter: grayscale(0%); 
+  cursor: pointer;
+}
+
+.personnage {
+  background: url(./media/download.png) 50% 50%;
+  background-size: cover;
+  height: 799px;
+  width: auto;
+}
+
+/* ******************** FOOTER ***************** */
+
+.footer {
+  background: url(./media/media-cards-bg-purple-d-f5b6d7ea814243730e3d7e010d5f4e89.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  position: relative;
+  top: 2200px;
+  height: 70px;
+  width: 100%;
+  color: #fff;
+}
+
+.txt-footer {
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+  'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+
+.txt-footer:hover {
+  text-shadow: 2px 2px 0px goldenrod;
+  font-size: 21px;
+  transition: 0.4s ease-in-out;
+}
+
+/* ****************************************** FIN *************************************** */
